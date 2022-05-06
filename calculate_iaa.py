@@ -3,7 +3,6 @@ import numpy as np
 from fleiss import fleissKappa
 
 result = pd.read_excel("iaa_sample.xlsx", engine="openpyxl")
-import ipdb; ipdb.set_trace(context=10)  # fmt: skip
 result = result.to_numpy()
 num_classes = int(np.max(result))
 
